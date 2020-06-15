@@ -1,1 +1,1 @@
-web: gunicorn app.server.main:app --bind 0.0.0.0:8080 --max-requests 20 --workers 2 --threads 4
+web: uvicorn app.server.main:app --bind 0.0.0.0:8080 --workers 2
