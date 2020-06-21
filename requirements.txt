@@ -1,4 +1,4 @@
-tensorflow
+tensorflow-cpu
 fastapi
 Pillow
 gunicorn
