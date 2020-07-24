@@ -1,4 +1,3 @@
-import base64
 from io import BytesIO
 
 import numpy as np
@@ -10,8 +9,8 @@ model = None
 
 
 def load_model():
-    model = tf.keras.applications.MobileNetV2(weights='imagenet')
-    print('Model loaded')
+    model = tf.keras.applications.MobileNetV2(weights="imagenet")
+    print("Model loaded")
     return model
 
 
@@ -29,8 +28,8 @@ def predict(image: Image.Image):
     response = []
     for i, res in enumerate(result):
         resp = {}
-        resp['class'] = res[1]
-        resp['confidence'] = f'{res[2]*100:0.2f} %'
+        resp["class"] = res[1]
+        resp["confidence"] = f"{res[2]*100:0.2f} %"
 
         response.append(resp)
 

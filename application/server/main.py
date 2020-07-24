@@ -2,12 +2,10 @@ import os
 
 import uvicorn
 from fastapi import FastAPI, File, Request, UploadFile
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
 
 from application.components import predict, read_imagefile
 
-app = FastAPI()
+app = FastAPI(title='Tensorflow Web app Starter Pack', description='by Aniket Maurya')
 
 
 @app.post("/api/predict")
