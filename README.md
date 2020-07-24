@@ -7,7 +7,9 @@
 
 ## Screenshots
 
-### ![SwaggerUI](images/main.png)
+### SwaggerUI
+![SwaggerUI](images/main.png)
 
 
-### ![Response](images/response.png)
+### Response
+![Response](images/response.png)
