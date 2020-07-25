@@ -4,3 +4,4 @@ Pillow
 gunicorn
 uvicorn
 numpy
+python-multipart
