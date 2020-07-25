@@ -1,11 +1,15 @@
-import os
-
 import uvicorn
-from fastapi import FastAPI, File, Request, UploadFile
+from fastapi import FastAPI, File, UploadFile
+from starlette.responses import RedirectResponse
 
 from application.components import predict, read_imagefile
 
 app = FastAPI(title='Tensorflow Web app Starter Pack', description='by Aniket Maurya')
+
+
+@app.get('/')
+async def index():
+    return RedirectResponse(url='/docs')
 
 
 @app.post("/api/predict")
