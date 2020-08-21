@@ -5,7 +5,7 @@ This web app is created with [FastAPI](https://fastapi.tiangolo.com/) which is h
 
 It automatically generates SwaggerUI for APIs.
 
-Upload any photo andd try it out at https://tf-webapp.herokuapp.com/
+## Upload any photo andd try it out at https://tf-webapp.herokuapp.com/
 
 ## How to run?
 
